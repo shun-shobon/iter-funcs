@@ -8,4 +8,5 @@ export * from "./src/map.ts";
 export * from "./src/pipe.ts";
 export * from "./src/reduce.ts";
 export * from "./src/skip.ts";
+export * from "./src/sum.ts";
 export * from "./src/take.ts";
