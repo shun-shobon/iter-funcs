@@ -26,7 +26,7 @@ import {
   map,
   pipe,
   take,
-} from "https://raw.githubusercontent.com/shun-shobon/iter-funcs/master/mod.ts";
+} from "https://deno.land/x/iter_funcs@1.1.0/mod.ts";
 
 const array = [1, 2, 3, 4, 5, 6];
 
