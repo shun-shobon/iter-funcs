@@ -2,7 +2,7 @@ import { assertEquals } from "../dev_deps.ts";
 
 import { enumerate } from "./enumerate.ts";
 
-Deno.test("map", () => {
+Deno.test("enumerate", () => {
   const a = ["a", "b", "c"];
   const iter = enumerate()(a.values());
 
