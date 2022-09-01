@@ -12,7 +12,7 @@ jobs:
           deno-version: v1.x
 
       - name: Format
-        run: deno fmt --check
+        run: deno fmt --check --ignore=CHANGELOG.md
       - name: Lint
         run: deno lint
 

@@ -1,6 +1,6 @@
 scripts:
   lint: deno lint
-  fmt: deno fmt
+  fmt: deno fmt --ignore=CHANGELOG.md
   cache: deno cache dev_deps.ts
   test: deno test
 
