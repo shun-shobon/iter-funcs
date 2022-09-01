@@ -4,7 +4,7 @@ import { map } from "./map.ts";
 
 Deno.test("map", () => {
   const a = [1, 2, 3];
-  const iter = map((x: number) => x * 2)(a);
+  const iter = map((x: number) => x * 2)(a.values());
 
   assertEquals(iter.next().value, 2);
   assertEquals(iter.next().value, 4);

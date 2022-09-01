@@ -1,11 +1,22 @@
+import type { Fn } from "./util.ts";
+
+interface Filter<T> extends Iterator<T> {
+  iter: Iterator<T>;
+  fn: Fn<T, boolean>;
+}
+
 export function filter<T>(
-  f: (_: T) => boolean,
-): (iter: Iterable<T>) => IterableIterator<T> {
-  return function* (iter: Iterable<T>): IterableIterator<T> {
-    for (const value of iter) {
-      if (f(value)) {
-        yield value;
+  fn: (_: T) => boolean,
+): (iter: Iterator<T>) => Filter<T> {
+  return (iter) => ({
+    iter,
+    fn,
+    next() {
+      while (true) {
+        const { done, value } = this.iter.next();
+        if (done) return { done, value: undefined };
+        if (this.fn(value)) return { done, value };
       }
-    }
-  };
+    },
+  });
 }

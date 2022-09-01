@@ -4,7 +4,7 @@ import { enumerate } from "./enumerate.ts";
 
 Deno.test("map", () => {
   const a = ["a", "b", "c"];
-  const iter = enumerate()(a);
+  const iter = enumerate()(a.values());
 
   assertEquals(iter.next().value, [0, "a"]);
   assertEquals(iter.next().value, [1, "b"]);
