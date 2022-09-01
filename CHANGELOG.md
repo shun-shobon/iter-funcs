@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/shun-shobon/iter-funcs/compare/1.0.0...1.1.0) (2022-09-01)
+
+
+### Features
+
+* Add `product` ([d2343e2](https://github.com/shun-shobon/iter-funcs/commit/d2343e2be32de46bdec8b2662d0fe4c7550de35c))
+* Add `sum` ([15ea901](https://github.com/shun-shobon/iter-funcs/commit/15ea901f2264ba98821fe0cd7ec9821f0e43cd1a))
+
+
+### Bug Fixes
+
+* Add import from `sum.ts` ([97ae59e](https://github.com/shun-shobon/iter-funcs/commit/97ae59e3c4bf7668ba65fae157381f9c61ecbe38))
+
 ## 1.0.0 (2022-09-01)
 
 
