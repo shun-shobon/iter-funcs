@@ -1,13 +1,11 @@
-import type { Fn } from "./util.ts";
-
 interface Map<T, U> extends Iterator<U> {
   iter: Iterator<T>;
-  fn: Fn<T, U>;
+  fn: (_: T) => U;
 }
 
 export function map<T, U>(
-  fn: Fn<T, U>,
-): (iter: Iterator<T>) => Map<T, U> {
+  fn: (_: T) => U,
+): (_: Iterator<T>) => Map<T, U> {
   return (iter) => ({
     iter,
     fn,

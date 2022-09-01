@@ -1,13 +1,11 @@
-import type { Fn } from "./util.ts";
-
 interface Filter<T> extends Iterator<T> {
   iter: Iterator<T>;
-  fn: Fn<T, boolean>;
+  fn: (_: T) => boolean;
 }
 
 export function filter<T>(
   fn: (_: T) => boolean,
-): (iter: Iterator<T>) => Filter<T> {
+): (_: Iterator<T>) => Filter<T> {
   return (iter) => ({
     iter,
     fn,

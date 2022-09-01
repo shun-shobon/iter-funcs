@@ -7,7 +7,7 @@ interface Enumerate<T> extends Iterator<[number, T]> {
 export function enumerate<T>(
   start = 0,
   step = 1,
-): (iter: Iterator<T>) => Enumerate<T> {
+): (_: Iterator<T>) => Enumerate<T> {
   return (iter) => ({
     iter,
     count: start,
