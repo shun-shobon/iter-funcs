@@ -1,4 +1,5 @@
 export * from "./src/all.ts";
+export * from "./src/any.ts";
 export * from "./src/enumerate.ts";
 export * from "./src/filter.ts";
 export * from "./src/fold.ts";
