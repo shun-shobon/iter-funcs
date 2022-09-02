@@ -2,6 +2,7 @@ export * from "./src/all.ts";
 export * from "./src/any.ts";
 export * from "./src/enumerate.ts";
 export * from "./src/filter.ts";
+export * from "./src/find.ts";
 export * from "./src/fold.ts";
 export * from "./src/forEach.ts";
 export * from "./src/map.ts";
