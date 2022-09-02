@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.0](https://github.com/shun-shobon/iter-funcs/compare/1.1.0...1.2.0) (2022-09-02)
+
+
+### Features
+
+* Add `chain` ([a66d8a1](https://github.com/shun-shobon/iter-funcs/commit/a66d8a14e6c43aff354bd6217092111fbb68b5df))
+* Add `find` ([60795c7](https://github.com/shun-shobon/iter-funcs/commit/60795c7390a1132842b42d7f89b79cb1f8b7d6cf))
+* Add `range` ([48c2736](https://github.com/shun-shobon/iter-funcs/commit/48c2736011d6e16a42749759530ced51c134813f))
+* Add `zip` ([4706d3f](https://github.com/shun-shobon/iter-funcs/commit/4706d3faffc398253f258df86f9d535c29e97def))
+
+
+### Bug Fixes
+
+* Add export `product` to `mod.ts` ([3a2c67a](https://github.com/shun-shobon/iter-funcs/commit/3a2c67a5e5cc256bbe9ff990d6b4a9dd6c27a79b))
+
 ## [1.1.0](https://github.com/shun-shobon/iter-funcs/compare/1.0.0...1.1.0) (2022-09-01)
 
 
