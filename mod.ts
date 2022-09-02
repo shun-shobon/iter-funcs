@@ -8,6 +8,7 @@ export * from "./src/fold.ts";
 export * from "./src/forEach.ts";
 export * from "./src/map.ts";
 export * from "./src/pipe.ts";
+export * from "./src/product.ts";
 export * from "./src/range.ts";
 export * from "./src/reduce.ts";
 export * from "./src/skip.ts";
