@@ -19,6 +19,8 @@ large iterator and you only need a few elements from it.
 
 ## Example
 
+<!-- x-release-please-start-version -->
+
 ```ts
 import {
   filter,
@@ -26,7 +28,7 @@ import {
   map,
   pipe,
   take,
-} from "https://deno.land/x/iter_funcs@1.1.0/mod.ts";
+} from "https://deno.land/x/iter_funcs@1.3.0/mod.ts";
 
 const array = [1, 2, 3, 4, 5, 6];
 
@@ -38,3 +40,5 @@ pipe(
   forEach(console.log), // => 4, 8
 );
 ```
+
+<!-- x-release-please-end -->
