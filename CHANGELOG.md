@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.0](https://github.com/shun-shobon/iter-funcs/compare/1.4.0...1.5.0) (2022-09-03)
+
+
+### Features
+
+* Add `asyncToArray` ([5d04826](https://github.com/shun-shobon/iter-funcs/commit/5d04826145ecd968b30dbc1d3f04c6056a1b9814))
+* Add `toAsyncIterable` ([c20355a](https://github.com/shun-shobon/iter-funcs/commit/c20355ad42bc5d6f60e2c8ce1832d27708afa76a))
+
 ## [1.4.0](https://github.com/shun-shobon/iter-funcs/compare/1.3.0...1.4.0) (2022-09-03)
 
 
