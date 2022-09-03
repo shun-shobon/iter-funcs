@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0](https://github.com/shun-shobon/iter-funcs/compare/1.3.0...1.4.0) (2022-09-03)
+
+
+### Features
+
+* Add `toAsync` ([814db71](https://github.com/shun-shobon/iter-funcs/commit/814db71b43785a040e3e7566caad37c4d666fa26))
+* Add async functions ([6738cbb](https://github.com/shun-shobon/iter-funcs/commit/6738cbb3c326aa83a57035f132e9d9223eeccc2e))
+
 ## [1.3.0](https://github.com/shun-shobon/iter-funcs/compare/1.2.0...1.3.0) (2022-09-03)
 
 
