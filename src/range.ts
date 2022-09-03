@@ -1,21 +1,15 @@
-interface Range extends Iterator<number> {
-  start: number;
-  end?: number;
-  i: number;
-}
+export function range(start: number, end?: number): Iterator<number> {
+  let count = start;
 
-export function range(start: number, end?: number): Range {
   return {
-    start,
-    end,
-    i: start,
     next() {
-      if (this.end !== undefined && this.i >= this.end) {
+      if (end !== undefined && count >= end) {
         return { done: true, value: undefined };
       }
 
-      const result = { done: false, value: this.i };
-      this.i += 1;
+      const result = { done: false, value: count };
+      count += 1;
+
       return result;
     },
   };
