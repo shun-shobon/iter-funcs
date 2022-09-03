@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/shun-shobon/iter-funcs/compare/1.2.0...1.3.0) (2022-09-03)
+
+
+### Features
+
+* Add `fromIterable` ([7c8455e](https://github.com/shun-shobon/iter-funcs/commit/7c8455e164be70161e11184188e8275ac4b77e5b))
+* Add `toIterable` ([805bdb7](https://github.com/shun-shobon/iter-funcs/commit/805bdb748285f7afba8af2e885d4c4f8c1676bc6))
+
 ## [1.2.0](https://github.com/shun-shobon/iter-funcs/compare/1.1.0...1.2.0) (2022-09-02)
 
 
