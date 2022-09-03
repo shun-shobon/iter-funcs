@@ -17,3 +17,23 @@ export function skip<T>(
     };
   };
 }
+
+export function asyncSkip<T>(
+  n: number,
+): (_: AsyncIterator<T>) => AsyncIterator<T> {
+  return (iter) => {
+    let count = 0;
+
+    return {
+      async next() {
+        while (count < n) {
+          const result = await iter.next();
+          if (result.done) return result;
+          count += 1;
+        }
+
+        return iter.next();
+      },
+    };
+  };
+}

@@ -10,3 +10,16 @@ export function chain<T, U>(
     },
   });
 }
+
+export function asyncChain<T, U>(
+  after: AsyncIterator<U>,
+): (_: AsyncIterator<T>) => AsyncIterator<T | U> {
+  return (before) => ({
+    async next() {
+      const result = await before.next();
+      if (result.done) return after.next();
+
+      return result;
+    },
+  });
+}

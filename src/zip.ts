@@ -15,3 +15,20 @@ export function zip<T, U>(
     };
   };
 }
+
+export function asyncZip<T, U>(
+  b: AsyncIterator<U>,
+): (_: AsyncIterator<T>) => AsyncIterator<[T, U]> {
+  return (a) => {
+    return {
+      async next() {
+        const [aResult, bResult] = await Promise.all([a.next(), b.next()]);
+        if (aResult.done) return aResult;
+        if (bResult.done) return bResult;
+
+        const value: [T, U] = [aResult.value, bResult.value];
+        return { done: false, value };
+      },
+    };
+  };
+}
