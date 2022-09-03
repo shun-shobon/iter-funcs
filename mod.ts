@@ -15,5 +15,6 @@ export * from "./src/reduce.ts";
 export * from "./src/skip.ts";
 export * from "./src/sum.ts";
 export * from "./src/take.ts";
+export * from "./src/toAsync.ts";
 export * from "./src/toIterable.ts";
 export * from "./src/zip.ts";
