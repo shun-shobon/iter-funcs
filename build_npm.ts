@@ -24,6 +24,13 @@ await build({
       url: "git+https://github.com/shun-shobon/iter-funcs.git",
     },
     sideEffects: false,
+    keywords: [
+      "iter",
+      "iterator",
+      "functional",
+      "functional-programming",
+      "utility",
+    ],
   },
 });
 
