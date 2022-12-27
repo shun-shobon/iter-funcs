@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.7.0](https://github.com/shun-shobon/iter-funcs/compare/1.6.0...1.7.0) (2022-12-27)
+
+
+### Features
+
+* Add `stepBy` ([177c754](https://github.com/shun-shobon/iter-funcs/commit/177c754b701673fc6d89b639eb4a99ef78571d2a))
+* Add `toArray` ([8ac0aec](https://github.com/shun-shobon/iter-funcs/commit/8ac0aec1c6171adcc57a9347cb7492c8516660ae))
+
+
+### Bug Fixes
+
+* Fix `main` field of `package.json` ([1e98c8a](https://github.com/shun-shobon/iter-funcs/commit/1e98c8ac9f2fff86368eca2d483017558b9945bf))
+* Use `PromiseLike` instead of `Promise` ([feed517](https://github.com/shun-shobon/iter-funcs/commit/feed51725617620b28133ec72b03094e3df04b0c))
+
 ## [1.6.0](https://github.com/shun-shobon/iter-funcs/compare/1.5.0...1.6.0) (2022-12-27)
 
 

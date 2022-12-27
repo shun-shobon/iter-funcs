@@ -27,7 +27,7 @@ any library that uses them.
 Install package from npm.
 
 ```sh
-npm install @shun-shobon/iter-funcs@1.6.0
+npm install @shun-shobon/iter-funcs@1.7.0
 ```
 
 You can import from the package as `@shun-shobon/iter-funcs`.
@@ -41,7 +41,7 @@ import { filter, map } from "@shun-shobon/iter-funcs";
 You can directly import from `deno.land/x`.
 
 ```ts
-import { filter, map } from "https://deno.land/x/iter_funcs@1.6.0/mod.ts";
+import { filter, map } from "https://deno.land/x/iter_funcs@1.7.0/mod.ts";
 ```
 
 ### Browser
@@ -52,7 +52,7 @@ You can directly import from `unpkg.com`.
 import {
   filter,
   map,
-} from "https://unpkg.com/@shun-shobon/iter-funcs@1.6.0/esm/mod.js";
+} from "https://unpkg.com/@shun-shobon/iter-funcs@1.7.0/esm/mod.js";
 ```
 
 <!-- x-release-please-end -->
@@ -71,7 +71,7 @@ import {
   map,
   pipe,
   take,
-} from "https://deno.land/x/iter_funcs@1.6.0/mod.ts";
+} from "https://deno.land/x/iter_funcs@1.7.0/mod.ts";
 
 const array = [1, 2, 3, 4, 5, 6];
 
@@ -96,7 +96,7 @@ import {
   asyncTake,
   asyncToArray,
   pipe,
-} from "https://deno.land/x/iter_funcs@1.6.0/mod.ts";
+} from "https://deno.land/x/iter_funcs@1.7.0/mod.ts";
 
 const files: Array<string> = await pipe(
   expandGlob("src/*.ts"), // Find all .ts files in src directory
