@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/shun-shobon/iter-funcs/compare/1.5.0...1.6.0) (2022-12-27)
+
+
+### Features
+
+* Add `nth` ([3fe8ad9](https://github.com/shun-shobon/iter-funcs/commit/3fe8ad98466f10507d05eea9d79e4d06345fc211))
+
 ## [1.5.0](https://github.com/shun-shobon/iter-funcs/compare/1.4.0...1.5.0) (2022-09-03)
 
 

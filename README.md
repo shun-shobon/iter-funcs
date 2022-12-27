@@ -28,7 +28,7 @@ import {
   map,
   pipe,
   take,
-} from "https://deno.land/x/iter_funcs@1.5.0/mod.ts";
+} from "https://deno.land/x/iter_funcs@1.6.0/mod.ts";
 
 const array = [1, 2, 3, 4, 5, 6];
 
