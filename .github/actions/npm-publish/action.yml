@@ -1,0 +1,38 @@
+name: Release
+description: Release a new Docker image
+inputs:
+  github-token:
+    description: GitHub token
+    required: true
+  npm-token:
+    description: npm token
+    required: true
+runs:
+  using: composite
+  steps:
+    - uses: denoland/setup-deno@v1
+      with:
+        deno-version: v1.x
+    - uses: actions/setup-node@v3
+      with:
+        node-version: lts/*
+    - run: deno run -A build_npm.ts
+      shell: bash
+
+    - uses: actions/setup-node@v3
+      with:
+        registry-url: https://registry.npmjs.org/
+    - run: npm publish
+      working-directory: ./npm
+      shell: bash
+      env:
+        NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
+
+    - uses: actions/setup-node@v3
+      with:
+        registry-url: https://npm.pkg.github.com/
+    - run: npm publish
+      working-directory: ./npm
+      shell: bash
+      env:
+        NODE_AUTH_TOKEN: ${{ inputs.github-token }}

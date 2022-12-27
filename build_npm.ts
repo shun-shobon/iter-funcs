@@ -12,7 +12,9 @@ await build({
   },
   package: {
     name: "@shun-shobon/iter-funcs",
+    // x-release-please-start-version
     version: "0.1.0",
+    // x-release-please-end
     description:
       "Utility functions for iterators. Inspired by Rust's `std::iter::Iterator` trait.",
     license: "MIT",
