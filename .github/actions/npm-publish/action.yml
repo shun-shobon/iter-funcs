@@ -16,7 +16,10 @@ runs:
     - uses: actions/setup-node@v3
       with:
         node-version: lts/*
-    - run: deno run -A build_npm.ts
+
+    - run: |
+        deno install -qAn vr https://deno.land/x/velociraptor@1.5.0/cli.ts
+        vr npm
       shell: bash
 
     - uses: actions/setup-node@v3

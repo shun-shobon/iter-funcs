@@ -7,6 +7,7 @@ scripts:
     cmd:
       - vr test --coverage=coverage
       - deno coverage ./coverage --lcov --output=coverage.lcov
+  npm: deno run -A build_npm.ts
 
   pre-commit:
     cmd:
