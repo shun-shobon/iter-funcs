@@ -1,8 +1,9 @@
 # iter-funcs
 
+[![npm](https://img.shields.io/npm/v/@shun-shobon/iter-funcs?logo=npm)](https://www.npmjs.com/package/@shun-shobon/iter-funcs)
+[![deno](https://img.shields.io/github/v/release/shun-shobon/iter-funcs?label=deno&logo=deno)](https://deno.land/x/iter_funcs)
 [![test](https://github.com/shun-shobon/iter-funcs/actions/workflows/test.yml/badge.svg)](https://github.com/shun-shobon/iter-funcs/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/shun-shobon/iter-funcs/branch/master/graph/badge.svg?token=gwyScwGdCG)](https://codecov.io/gh/shun-shobon/iter-funcs)
-[![release](https://img.shields.io/github/v/release/shun-shobon/iter-funcs?display_name=tag&sort=semver)](https://github.com/shun-shobon/iter-funcs/releases)
 
 ## About
 
