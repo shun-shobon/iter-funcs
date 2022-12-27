@@ -14,6 +14,7 @@ export * from "./src/product.ts";
 export * from "./src/range.ts";
 export * from "./src/reduce.ts";
 export * from "./src/skip.ts";
+export * from "./src/stepBy.ts";
 export * from "./src/sum.ts";
 export * from "./src/take.ts";
 export * from "./src/toArray.ts";
