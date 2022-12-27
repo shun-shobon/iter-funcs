@@ -21,10 +21,13 @@ large iterator and you only need a few elements from it.
 
 <!-- x-release-please-start-version -->
 
+This is a basic example.
+
 ```ts
 import {
   filter,
   forEach,
+  fromIterable,
   map,
   pipe,
   take,
@@ -33,11 +36,35 @@ import {
 const array = [1, 2, 3, 4, 5, 6];
 
 pipe(
-  array.values(), // make iterator from array
+  array,
+  fromIterable, // make iterator from iterable
   filter((x) => x % 2 === 0), // filter even numbers
   map((x) => x * 2), // multiply by 2
   take(2), // take first 2 elements
   forEach(console.log), // => 4, 8
+);
+```
+
+You can also `AsyncIterator`.
+
+```ts
+import { expandGlob } from "https://deno.land/std/fs/mod.ts";
+import {
+  asyncFilter,
+  asyncForEach,
+  asyncMap,
+  asyncTake,
+  asyncToArray,
+  pipe,
+} from "https://deno.land/x/iter_funcs@1.6.0/mod.ts";
+
+const files: Array<string> = await pipe(
+  expandGlob("src/*.ts"), // Find all .ts files in src directory
+  asyncMap((entry) => entry.path), // Get path from entry
+  asyncFilter((path) => !path.endsWith("_test.ts")), // Exclude test files
+  asyncTake(2), // Take first 2 elements
+  asyncMap((path) => Deno.readTextFile(path)), // Read file content
+  asyncToArray, // Convert to array
 );
 ```
 
