@@ -1,0 +1,7 @@
+{
+  "lint": {
+    "rules": {
+      "include": ["explicit-module-boundary-types", "no-external-import"]
+    }
+  }
+}

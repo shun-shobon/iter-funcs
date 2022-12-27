@@ -209,7 +209,9 @@ export function pipe<
   f14: (_: T14) => T15,
   f15: (_: T15) => T16,
 ): T16;
-// deno-lint-ignore no-explicit-any
+
+// It's ok to use `any` here because the function is already typed
+// deno-lint-ignore no-explicit-any explicit-module-boundary-types
 export function pipe(x: any, ...fs: Array<(_: any) => any>): any {
   return fs.reduce((x, f) => f(x), x);
 }
