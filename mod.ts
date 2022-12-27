@@ -9,6 +9,7 @@ export * from "./src/fold.ts";
 export * from "./src/forEach.ts";
 export * from "./src/fromIterable.ts";
 export * from "./src/map.ts";
+export * from "./src/nth.ts";
 export * from "./src/pipe.ts";
 export * from "./src/product.ts";
 export * from "./src/range.ts";
