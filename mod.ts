@@ -1,6 +1,5 @@
 export * from "./src/all.ts";
 export * from "./src/any.ts";
-export * from "./src/asyncToArray.ts";
 export * from "./src/chain.ts";
 export * from "./src/enumerate.ts";
 export * from "./src/filter.ts";
@@ -17,6 +16,7 @@ export * from "./src/reduce.ts";
 export * from "./src/skip.ts";
 export * from "./src/sum.ts";
 export * from "./src/take.ts";
+export * from "./src/toArray.ts";
 export * from "./src/toAsync.ts";
 export * from "./src/toIterable.ts";
 export * from "./src/zip.ts";

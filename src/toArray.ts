@@ -1,4 +1,8 @@
-import { toAsyncIterable } from "./toIterable.ts";
+import { toAsyncIterable, toIterable } from "./toIterable.ts";
+
+export function toArray<T>(iter: Iterator<T>): Array<T> {
+  return [...toIterable(iter)];
+}
 
 export async function asyncToArray<T>(
   iter: AsyncIterator<T>,
