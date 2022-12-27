@@ -17,6 +17,12 @@ This library's functions are **lazy**. They don't evaluate the whole iterator at
 once. They evaluate only the needed elements. This is useful when you have a
 large iterator and you only need a few elements from it.
 
+## Why not use method chaining?
+
+Method chaining is a common pattern in JavaScript. However, it tends to increase
+bundle size. It also makes it difficult to use with other libraries that use
+iterators.
+
 ## Example
 
 <!-- x-release-please-start-version -->
