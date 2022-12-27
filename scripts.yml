@@ -1,8 +1,13 @@
 scripts:
   lint: deno lint
-  fmt: deno fmt --ignore=CHANGELOG.md
+  fmt: deno fmt
   cache: deno cache dev_deps.ts
   test: deno test
+  test:ci:
+    cmd:
+      - vr test --coverage=coverage
+      - deno coverage ./coverage --lcov --output=coverage.lcov
+  npm: deno run -A build_npm.ts
 
   pre-commit:
     cmd:

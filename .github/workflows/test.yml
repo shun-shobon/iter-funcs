@@ -6,20 +6,22 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: denoland/setup-deno@v1
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
+      - name: Install Velociraptor
+        run: deno install -qAn vr https://deno.land/x/velociraptor@1.5.0/cli.ts
 
       - name: Format
-        run: deno fmt --check --ignore=CHANGELOG.md
+        run: vr fmt
       - name: Lint
-        run: deno lint
-
+        run: vr lint
       - name: Test
-        run: deno test -A --coverage=coverage
-      - name: Create coverage report
-        run: deno coverage ./coverage --lcov --output=coverage.lcov
+        run: vr test:ci
+
       - name: Codecov
         uses: codecov/codecov-action@v3
         with:

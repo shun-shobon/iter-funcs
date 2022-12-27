@@ -1,4 +1,9 @@
 {
+  "fmt": {
+    "files": {
+      "exclude": ["npm", "CHANGELOG.md"]
+    }
+  },
   "lint": {
     "files": {
       "exclude": ["npm"]
