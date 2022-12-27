@@ -1,5 +1,5 @@
-name: Release
-description: Release a new Docker image
+name: Publish to npm
+description: Generate and publish npm package to npm and GitHub Packages
 inputs:
   github-token:
     description: GitHub token

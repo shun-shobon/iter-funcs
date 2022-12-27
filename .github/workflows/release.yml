@@ -21,7 +21,7 @@ jobs:
             build_npm.ts
 
       - if: ${{ steps.release.outputs.release_created }}
-        uses: ./.github/actions/release
+        uses: ./.github/actions/npm-publish
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           npm-token: ${{ secrets.NPM_TOKEN }}
