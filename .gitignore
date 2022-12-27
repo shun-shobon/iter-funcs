@@ -1,1 +1,6 @@
+# Test Coverage
+coverage/
+coverage.lcov
+
+# Dnt output
 npm/

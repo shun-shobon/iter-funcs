@@ -10,16 +10,15 @@ jobs:
       - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
+      - run: deno install -A https://deno.land/x/velociraptor@1.5.0/cli.ts
 
       - name: Format
-        run: deno fmt --check --ignore=CHANGELOG.md
+        run: vr fmt
       - name: Lint
-        run: deno lint
-
+        run: vr lint
       - name: Test
-        run: deno test -A --coverage=coverage
-      - name: Create coverage report
-        run: deno coverage ./coverage --lcov --output=coverage.lcov
+        run: vr test:ci
+
       - name: Codecov
         uses: codecov/codecov-action@v3
         with:
