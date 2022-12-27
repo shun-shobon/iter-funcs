@@ -1,7 +1,10 @@
 {
   "lint": {
+    "files": {
+      "exclude": ["npm"]
+    },
     "rules": {
-      "include": ["explicit-module-boundary-types", "no-external-import"]
+      "include": ["explicit-module-boundary-types"]
     }
   }
 }
