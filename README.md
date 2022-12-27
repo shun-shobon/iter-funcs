@@ -12,17 +12,50 @@ Utility functions for iterators. Inspired by Rust's
 trait. This library uses JavaScript native iterators, so it's compatible with
 any library that uses them.
 
-## Difference from `Array.prototype` methods
+## Support platforms
 
-This library's functions are **lazy**. They don't evaluate the whole iterator at
-once. They evaluate only the needed elements. This is useful when you have a
-large iterator and you only need a few elements from it.
+- Node.js
+- Deno
+- Browser
 
-## Why not use method chaining?
+## Installation
 
-Method chaining is a common pattern in JavaScript. However, it tends to increase
-bundle size. It also makes it difficult to use with other libraries that use
-iterators.
+<!-- x-release-please-start-version -->
+
+### Node.js
+
+Install package from npm.
+
+```sh
+npm install @shun-shobon/iter-funcs@1.6.0
+```
+
+You can import from the package as `@shun-shobon/iter-funcs`.
+
+```ts
+import { filter, map } from "@shun-shobon/iter-funcs";
+```
+
+### Deno
+
+You can directly import from `deno.land/x`.
+
+```ts
+import { filter, map } from "https://deno.land/x/iter_funcs@1.6.0/mod.ts";
+```
+
+### Browser
+
+You can directly import from `unpkg.com`.
+
+```js
+import {
+  filter,
+  map,
+} from "https://unpkg.com/@shun-shobon/iter-funcs@1.6.0/esm/mod.js";
+```
+
+<!-- x-release-please-end -->
 
 ## Example
 
@@ -76,3 +109,15 @@ const files: Array<string> = await pipe(
 ```
 
 <!-- x-release-please-end -->
+
+## Difference from `Array.prototype` methods
+
+This library's functions are **lazy**. They don't evaluate the whole iterator at
+once. They evaluate only the needed elements. This is useful when you have a
+large iterator and you only need a few elements from it.
+
+## Why not use method chaining?
+
+Method chaining is a common pattern in JavaScript. However, it tends to increase
+bundle size. It also makes it difficult to use with other libraries that use
+iterators.
