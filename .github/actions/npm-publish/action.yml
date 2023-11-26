@@ -13,7 +13,7 @@ runs:
     - uses: denoland/setup-deno@v1
       with:
         deno-version: v1.x
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@v4
       with:
         node-version: lts/*
 
@@ -22,7 +22,7 @@ runs:
         vr npm
       shell: bash
 
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@v4
       with:
         registry-url: https://registry.npmjs.org/
     - run: npm publish
@@ -31,7 +31,7 @@ runs:
       env:
         NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
 
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@v4
       with:
         registry-url: https://npm.pkg.github.com/
     - run: npm publish
